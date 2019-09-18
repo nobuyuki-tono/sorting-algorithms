@@ -8,24 +8,24 @@ var someArray = [0,1,2,3,4,5,6,7,8,9]
 
 
 // fill array with random numbers
-rndArray = fillList(500)
+// rndArray = fillList(500)
 
 
-// show the arrays we are dealing with
-console.log(rndArray);
-// show the end result
-// console.log(bubbleSort(rndArray))
+// // show the arrays we are dealing with
+// console.log(rndArray);
+// // show the end result
+// // console.log(bubbleSort(rndArray))
 
 
-function fillList(itemCount)
-    {
-        var anArray = [];
-    for (var i = 0; i < itemCount; i++)
-        {
-            anArray.push(Math.floor((Math.random() * 500) + 1));
-        }
-        return anArray;
-    }
+// function fillList(itemCount)
+//     {
+//         var anArray = [];
+//     for (var i = 0; i < itemCount; i++)
+//         {
+//             anArray.push(Math.floor((Math.random() * 500) + 1));
+//         }
+//         return anArray;
+//     }
 
 
 
@@ -139,7 +139,21 @@ function selectionSort(theArray){
 
 
 function generateRudNum(){
+   rndArray = fillList(500)
+   function fillList(itemCount)
+    {
+        var anArray = [];
+    for (var i = 0; i < itemCount; i++)
+        {
+            anArray.push(Math.floor((Math.random() * 500) + 1));
+        }
+        return anArray;
+    }
    document.getElementById("left-input").value = rndArray;
+ }
+
+ function clearRight(){
+    document.getElementById("right-input").value = "";
  }
 
  
